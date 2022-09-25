@@ -10,12 +10,14 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources", glue = "org.stepdefinition",dryRun=false,
 
-		tags = "@E2E", 
+		tags = "@E2E",
 		plugin = {
-				"html:C:\\Users\\logan\\eclipse-workspace\\FlipkartProject\\src\\main\\resources\\Reports\\HtmlReport",
-				"json:C:\\Users\\logan\\eclipse-workspace\\FlipkartProject\\src\\main\\resources\\Reports\\JSONReport\\jsonreport.json",
-				"junit:C:\\Users\\logan\\eclipse-workspace\\FlipkartProject\\src\\main\\resources\\Reports\\JUNITReport\\junitreport.xml",
-				"rerun:C:\\Users\\logan\\eclipse-workspace\\FlipkartProject\\src\\test\\resources\\FailedScenarios\\failed.txt"
+				
+				"html:src\\main\\resources\\Reports\\HtmlReport",
+				"json:src\\main\\resources\\Reports\\JSONReport\\jsonreport.json",
+				"junit:src\\main\\resources\\Reports\\JUNITReport\\junitreport.xml",
+				"rerun:src\\test\\resources\\FailedScenarios\\failed.txt"
+
 		}
 
 )
@@ -23,7 +25,7 @@ import io.cucumber.junit.CucumberOptions;
 public class TestRunner {
 	@AfterClass
 	public static void report() {
-		JVMReports.generateJVMReport("C:\\\\Users\\\\logan\\\\eclipse-workspace\\\\FlipkartProject\\\\src\\\\main\\\\resources\\\\Reports\\\\JSONReport\\\\jsonreport.json");
+		JVMReports.generateJVMReport("src\\\\main\\\\resources\\\\Reports\\\\JSONReport\\\\jsonreport.json");
 
 	}
 

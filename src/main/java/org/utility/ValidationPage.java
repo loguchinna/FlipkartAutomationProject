@@ -6,20 +6,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ValidationPage extends CommonClass{
-	
+public class ValidationPage extends CommonClass {
+
 	public ValidationPage() {
-			PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);
 
 	}
-	
-	@FindBy(xpath="//div[@class='_2-uG6-']")
+
+	@FindBy(xpath = "//div[@class='_2-uG6-']")
 	private WebElement nameInCart;
-	
-	@FindBy(xpath="//span[@class='_2-ut7f _1WpvJ7']")
+
+	@FindBy(xpath = "//span[@class='_2-ut7f _1WpvJ7']")
 	private WebElement priceInCart;
-	
-	@FindBy(xpath="//div[@class='_1LCJ1U']")
+
+	@FindBy(xpath = "//div[@class='_1LCJ1U']")
 	private WebElement message;
 
 	public WebElement getNameInCart() {
@@ -33,6 +33,5 @@ public class ValidationPage extends CommonClass{
 	public WebElement getMessage() {
 		return message;
 	}
-
 
 }

@@ -11,20 +11,15 @@ public class RemoveFromCartPage extends CommonClass {
 	public RemoveFromCartPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-	@FindBy(xpath="//div[@class='_1psGvi']")
+
+	@FindBy(xpath = "//div[@class='_1psGvi']")
 	private WebElement cartBtn;
 
-	
-	@FindBy(xpath="//div[text()='Remove']")
+	@FindBy(xpath = "//div[text()='Remove']")
 	private List<WebElement> removeFromCart;
-	
-	
-	@FindBy(xpath="(//div[text()='Remove'])[1]")
+
+	@FindBy(xpath = "(//div[text()='Remove'])[1]")
 	private WebElement confirmremoveFromCart;
-	
-	
 
 	public WebElement getCartBtn() {
 		return cartBtn;
@@ -37,7 +32,5 @@ public class RemoveFromCartPage extends CommonClass {
 	public WebElement getConfirmremoveFromCart() {
 		return confirmremoveFromCart;
 	}
-
-	
 
 }

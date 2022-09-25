@@ -17,6 +17,7 @@ public class JVMReports {
 		Configuration conf =new Configuration(loc, "FlipKart");
 		conf.addClassifications("Browser", "Chrome");
 		conf.addClassifications("OS", "Window");
+		conf.addClassifications("Tested By", "Loganathan");
 		List<String> jsonfiles=new LinkedList<>();
 		jsonfiles.add(json);		
 		ReportBuilder r=new ReportBuilder(jsonfiles, conf);

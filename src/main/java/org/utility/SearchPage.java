@@ -12,23 +12,23 @@ public class SearchPage extends CommonClass {
 	public SearchPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@CacheLookup
-	@FindBy(xpath="//button[text()='✕']")
+	@FindBy(xpath = "//button[text()='✕']")
 	private WebElement closeButton;
-	
+
 	@CacheLookup
-	@FindBy(xpath="//input[@type='text']")
+	@FindBy(xpath = "//input[@type='text']")
 	private WebElement search;
-	
+
 	@CacheLookup
-	@FindBy(xpath="//button[@type='submit']")
+	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement searchBtn;
-	
-	@FindBy(xpath="//div[@class='_4rR01T']")
+
+	@FindBy(xpath = "//div[@class='_4rR01T']")
 	private List<WebElement> listOfOptions;
 
-	@FindBy(xpath="//span[text()='Next']")
+	@FindBy(xpath = "//span[text()='Next']")
 	private WebElement nextBtn;
 
 	public WebElement getCloseButton() {
@@ -50,6 +50,5 @@ public class SearchPage extends CommonClass {
 	public WebElement getNextBtn() {
 		return nextBtn;
 	}
-	
-	
+
 }

@@ -107,8 +107,8 @@ public class AddToCart extends CommonClass {
 		click(wait.until(ExpectedConditions.elementToBeClickable(remove.getCartBtn())));
 		int size = remove.getRemoveFromCart().size();
 		for (int i = 0; i < size; i++) {
-			jsClick(remove.getRemoveFromCart().get((size - 1) - i));
-			jsClick(remove.getConfirmremoveFromCart());
+			jsClick(wait.until(ExpectedConditions.visibilityOf(remove.getRemoveFromCart().get((size - 1) - i))));
+			jsClick(wait.until(ExpectedConditions.visibilityOf(remove.getConfirmremoveFromCart())));
 		}
 
 	}
