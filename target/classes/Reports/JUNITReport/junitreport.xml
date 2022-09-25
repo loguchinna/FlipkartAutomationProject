@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="45.663618">
+<testcase classname="Order the Product from Flipkart Website" name="To order a any product from the list of samsung mobile" time="45.663618">
+<system-out><![CDATA[Given Launch the URL........................................................passed
+Then Validate the URL.......................................................passed
+When Do a Product search....................................................passed
+And Select any product & Add that to the cart...............................passed
+Then Check the right product is added with respective prices................passed
+When Place Order & Login to the application by using "7200178755" and "endurance".passed
+And Select Address & Select Payment option..................................passed
+When Remove the product from the cart.......................................passed
+Then Check the Product is removed from the cart.............................passed
+]]></system-out>
+</testcase>
+</testsuite>

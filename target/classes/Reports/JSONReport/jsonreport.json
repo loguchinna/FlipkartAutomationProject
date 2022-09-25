@@ -1,0 +1,181 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-25T07:10:04.938Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2013509200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.before()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "To order a any product from the list of samsung mobile",
+        "description": "",
+        "id": "order-the-product-from-flipkart-website;to-order-a-any-product-from-the-list-of-samsung-mobile;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 835081899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30207394899,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Launch the URL",
+            "match": {
+              "location": "AddToCart.launch_the_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4697600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Validate the URL",
+            "match": {
+              "location": "AddToCart.validate_the_URL()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 262305300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Do a Product search",
+            "match": {
+              "location": "AddToCart.do_a_Product_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5983567500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select any product \u0026 Add that to the cart",
+            "match": {
+              "location": "AddToCart.select_any_product_Add_that_to_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1412146501,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Check the right product is added with respective prices",
+            "match": {
+              "location": "AddToCart.check_the_right_product_is_added_with_respective_prices()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3734984500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Place Order \u0026 Login to the application by using \"7200178755\" and \"endurance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"7200178755\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"endurance\"",
+                  "offset": 65
+                }
+              ],
+              "location": "AddToCart.place_Order_Login_to_the_application_by_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 252700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Select Address \u0026 Select Payment option",
+            "match": {
+              "location": "AddToCart.select_Address_Select_Payment_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 620690700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Remove the product from the cart",
+            "match": {
+              "location": "AddToCart.remove_the_product_from_the_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 567951199,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Check the Product is removed from the cart",
+            "match": {
+              "location": "AddToCart.check_the_Product_is_removed_from_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@order"
+          }
+        ]
+      }
+    ],
+    "name": "Order the Product from Flipkart Website",
+    "description": "",
+    "id": "order-the-product-from-flipkart-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/addToCartFunction.feature",
+    "tags": [
+      {
+        "name": "@E2E",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
